@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-image:url(https://images.unsplash.com/photo-1504903271097-d7e7c7f5f7ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1{
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .chat{
+    background-color: #ffffffe7;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .chat h2{
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  .msg{
+    width: 420px;
+    height: 480px;
+    border-top: 1px solid rgb(241, 145, 0);
+    border-bottom: 1px solid rgba(255, 153, 0, 0.904);
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    
+    overflow-y: scroll;
+    
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .input_msg{
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 0.4rem 1.3rem
+  }
+  .input_msg button{
+    background-color: #008d13;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+  }
+  
+  .msg p{
+    background-color: rgba(145, 137, 128, 0.932);
+    padding: 0.4rem 1rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .msg p span{
+    display: block;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+  .msg .sender{
+    background-color: rgb(6, 90, 24);
+    align-self: end;
+  }
